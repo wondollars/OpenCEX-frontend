@@ -16,7 +16,7 @@
                 localConfig.socials.facebook !== ''
               "
               class="footer__social-item"
-              :href="`https://facebook.com/${localConfig.socials.facebook.link}`"
+              :href="`https://www.facebook.com/WonNetworkEcoSystem/`"
             >
               <span class="pl-2">
                 <svg
@@ -43,7 +43,7 @@
                 localConfig.socials.twitter !== ''
               "
               class="footer__social-item"
-              :href="`https://twitter.com/${localConfig.socials.twitter.link}`"
+              :href="`https://twitter.com/Won_Network`"
             >
               <span class="pl-1">
                 <svg
@@ -67,7 +67,7 @@
                 localConfig.socials.telegram !== ''
               "
               class="footer__social-item"
-              :href="`https://t.me/${localConfig.socials.telegram.link}`"
+              :href="`https://t.me/WonCommunity`"
             >
               <span>
                 <svg
