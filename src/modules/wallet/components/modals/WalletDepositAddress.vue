@@ -100,6 +100,11 @@
           $t("wallet.binance_smart_chain_text")
         }}</strong>
       </p>
+      <p v-if="['WON'].includes(ticker)">
+        <strong class="font-weight-bold" style="font-size: 16px">{{
+          $t("wallet.won_smart_chain_text")
+        }}</strong>
+      </p>
       <p v-if="['XRP', 'EOS'].includes(ticker)">
         <span class="text-danger" style="font-size: 16px">{{
           $t("wallet.dest_tag_required")
@@ -206,6 +211,9 @@ export default {
       }
       if (this.blockchain === "TRX") {
         return this.$t("common.tron_network");
+      }
+      if (this.blockchain === "WON") {
+        return this.$t("common.won_network");
       }
       return "";
     },
