@@ -119,14 +119,6 @@
               $t(`common.${currentWithdrawText}`)
             }}</span>
           </p>
-          <p
-            v-if="['USDT', 'WON', 'MMETA'].includes(ticker)"
-            style="font-size: 12px; text-align: center; margin-top: 10px"
-          >
-            <span class="text-danger">{{
-              $t(`common.${currentWithdrawText}`)
-            }}</span>
-          </p>
 
           <div class="withdrawal__minMax">
             <div class="withdrawal__minMax-blockLeft">
@@ -321,8 +313,6 @@ export default {
           return "sendOnlyErc20";
         case "BNB":
           return "sendOnlyBep20";
-        case "WON":
-          return "sendOnlyWon20";
         case "MMETA":
           return "sendOnlyBep20";
         case "BSC":
