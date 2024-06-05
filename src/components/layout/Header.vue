@@ -213,7 +213,7 @@
         </div>
       </div>
       <MenuComponent />
-      <LanguageSelector />
+      <!-- <LanguageSelector /> -->
       <div
         class="themeSelector"
         :class="{ dark: theme === 'dark' }"
@@ -247,12 +247,13 @@ import menuHelper from "~/mixins/menuHelper";
 import helpers from "~/mixins/helpers";
 import handleLogout from "~/mixins/handleLogout";
 import getFixedDecimal from "~/mixins/getFixedDecimal";
-import LanguageSelector from "~/components/layout/parts/LanguageSelector.vue";
+// import LanguageSelector from "~/components/layout/parts/LanguageSelector.vue";
 import { useCookies } from "vue3-cookies";
 
 export default {
   name: "HeaderComponent",
-  components: { LanguageSelector, MenuComponent },
+  components: { MenuComponent },
+  // components: { LanguageSelector, MenuComponent },
   mixins: [menuHelper, handleLogout, helpers, getFixedDecimal],
   props: {
     routeName: {
